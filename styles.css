@@ -1,0 +1,150 @@
+@import "normalize.css";
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #A8D4EF;
+    font-family: 'Sarabun', sans-serif;
+
+    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 8px;
+    flex-grow: 1;
+}
+
+footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+
+.menu-nav {
+    display: flex;
+    justify-content: end;
+    padding: 8px 0;
+}
+
+.menu-nav li {
+    margin-left: 16px;
+}
+
+.header-first {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.header-title {
+margin-bottom: 16px;
+}
+
+.title-large {
+    color: #ffffff;
+    line-height: 0.85;
+    /*font-size: clamp(16px, calc(20px + (36–20) * (100vw - 768px)/(1920–768)), 48px);*/
+
+    /*font-size: clamp(64px, calc(1vw + 1rem), 20px);*/
+    font-size: 64px;
+
+
+}
+
+.iceberg {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    .title-large {
+        font-size: calc(64px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+    }
+
+    .title-small {
+        font-size: 20px;
+    }
+
+    .title-small-box {
+        position: relative;
+        top: 2px;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .title-large {
+        font-size: 128px
+    }
+
+    .title-small {
+        font-size: 40px;
+    }
+
+    .title-small-box {
+        position: relative;
+        top: 15px;
+    }
+
+    main {
+        padding: 16px;
+        /*margin: auto;*/
+    }
+
+    .iceberg {
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: scale(1.5);
+    }
+}
+
+.title-small-box {
+    position: relative;
+}
+
+.title-small {
+    color: #000000;
+    /*font-size: 32px;*/
+    /*font-size: clamp(24px, calc(1vw + 1rem), 20px);*/
+    font-weight: 100;
+    font-family: 'Sarabun-Thin';
+    text-transform: uppercase;
+}
+
+.event-info-box {
+    width: 100%;
+    max-width: 480px;
+}
+
+
+.event-date {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+hr.solid {
+    border-top: 3px solid #ffffff;
+}
+
+.mountains {
+    position: relative;
+    top: 6px;
+    transform: scale3d(1, 1, 1);
+}
+
+.footer-content {
+    background-color: #ffffff;
+    padding: 8px 0;
+}
