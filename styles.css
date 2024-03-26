@@ -4,6 +4,11 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
 ul, li {
     margin: 0;
     padding: 0;
@@ -27,14 +32,27 @@ main {
 footer {
     flex-grow: 0;
     flex-shrink: 0;
-
+    overflow-x: hidden;
 }
 
+.margin-width {
+    margin: auto;
+    max-width: 1100px;
+}
 
 .menu-nav {
     display: flex;
     justify-content: end;
     padding: 8px 0;
+}
+.menu-nav a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu-nav a:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in;
 }
 
 .menu-nav li {
@@ -49,7 +67,7 @@ footer {
 }
 
 .header-title {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .title-large {
@@ -65,9 +83,10 @@ margin-bottom: 16px;
 
 .iceberg {
     margin-bottom: 16px;
+    z-index: -1;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 800px) {
     .title-large {
         font-size: calc(64px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
     }
@@ -81,6 +100,13 @@ margin-bottom: 16px;
         top: 2px;
     }
 
+    .row {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        padding: 8px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -104,9 +130,20 @@ margin-bottom: 16px;
 
     .iceberg {
         position: absolute;
+        width: 30vw;
+        height: 30vh;
         top: 320px;
         left: 50%;
         transform: scale(1.5);
+        animation: float 10s alternate infinite;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .footer-content {
+        padding: 16px;
     }
 }
 
@@ -125,9 +162,13 @@ margin-bottom: 16px;
 
 .event-info-box {
     width: 100%;
-    max-width: 480px;
+    margin-bottom: 64px;
 }
 
+.event-info-box h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
 
 .event-date {
     font-size: 32px;
@@ -136,15 +177,61 @@ margin-bottom: 16px;
 
 hr.solid {
     border-top: 3px solid #ffffff;
+    max-width: 50%;
+    margin: 0;
 }
 
 .mountains {
     position: relative;
     top: 6px;
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(calc(1 + 1 / 1.1), 1, 1);
 }
 
 .footer-content {
     background-color: #ffffff;
-    padding: 8px 0;
+}
+
+
+.row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+article.about h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+article.about h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+article.about p {
+
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+
+        transform: translatey(0px);
+    }
 }
