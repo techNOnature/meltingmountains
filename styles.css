@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    padding: 8px;
+    padding: 10px;
     flex-grow: 1;
 }
 
@@ -77,8 +77,6 @@ footer {
 
     /*font-size: clamp(64px, calc(1vw + 1rem), 20px);*/
     font-size: 64px;
-
-
 }
 
 .iceberg {
@@ -115,7 +113,7 @@ footer {
     }
 
     .title-small {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .title-small-box {
@@ -171,14 +169,14 @@ footer {
 }
 
 .event-date {
-    font-size: 32px;
+    font-size: 28px;
+    font-weight: 200;
     color: #ffffff;
-}
 
 hr.solid {
-    border-top: 3px solid #ffffff;
     max-width: 50%;
     margin: 0;
+    border-top: 0.5px solid #ffffff;
 }
 
 .mountains {
@@ -190,7 +188,6 @@ hr.solid {
 .footer-content {
     background-color: #ffffff;
 }
-
 
 .row {
     display: flex;
