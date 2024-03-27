@@ -160,7 +160,7 @@ footer {
 
 .event-info-box {
     width: 100%;
-    margin-bottom: 64px;
+    margin-top: 64px;
 }
 
 .event-info-box h2 {
@@ -176,7 +176,7 @@ footer {
 hr.solid {
     max-width: 50%;
     margin: 0;
-    border-top: 0.5px solid #ffffff;
+    border-top: 1px solid #ffffff;
 }
 
 .mountains {
