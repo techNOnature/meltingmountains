@@ -174,12 +174,12 @@ footer {
 
 .event-info-box {
     width: 100%;
-    margin-bottom: 64px;
+    margin-top: 64px;
 }
 
 .event-info-box h2 {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
 }
 
 .event-date {
@@ -191,6 +191,16 @@ hr.solid {
     max-width: 50%;
     margin: 0;
     border-top: 1px solid #ffffff;
+}
+
+.mountains {
+    position: relative;
+    top: 6px;
+    transform: scale3d(calc(1 + 1 / 1.1), 1, 1);
+}
+
+.footer-content {
+    background-color: #ffffff;
 }
 
 .row {
