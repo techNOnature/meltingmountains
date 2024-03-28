@@ -176,6 +176,7 @@ footer {
 .event-info-box {
     width: 100%;
     margin-top: 64px;
+    margin-bottom: 32px;
 }
 
 .event-info-box h2 {
@@ -241,7 +242,7 @@ article.about p {
     }
     50% {
         transform: translatey(-25px);
-        transform: scale(1.2)
+       
     }
     100% {
 
