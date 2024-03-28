@@ -84,6 +84,7 @@ footer {
 .iceberg {
     margin-bottom: 16px;
     z-index: -1;
+    animation: float 10s alternate infinite;
 }
 
 .mountains {
