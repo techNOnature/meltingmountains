@@ -221,7 +221,7 @@ hr.solid {
 article.about h2 {
     color: #ffffff;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
 }
 
 article.about h3 {
@@ -240,7 +240,7 @@ article.about p {
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-20px);
+        transform: translatey(-25px);
     }
     100% {
 
