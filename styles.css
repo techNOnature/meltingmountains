@@ -98,6 +98,18 @@ footer {
     background-color: #ffffff;
 }
 
+#auraThingy{
+  height:50px;
+  width:200px;
+  background:blue;
+  transistion:background 3s;
+  -webkit-transition:background 3s; /*safari/chrome*/
+  -moz-transition:background 3s;  /*firefox*/
+  -o-transition:background 3s;  /*opera*/
+}
+#auraThingy:hover{
+  background:lightblue;
+}
 
 @media (min-width: 300px) and (max-width: 800px) {
     .title-large {
