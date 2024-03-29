@@ -244,7 +244,7 @@ article.about p {
     }
     50% {
         transform: translatey(-25px);
-        transform: scale(1.1);
+        transform: scale(1.05);
        
     }
     100% {
