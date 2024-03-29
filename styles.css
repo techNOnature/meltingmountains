@@ -148,7 +148,7 @@ footer {
         top: 320px;
         left: 50%;
         transform: scale(1.0);
-        animation: float 10s alternate infinite;
+        animation: float 14s alternate infinite;
     }
 
     .row {
