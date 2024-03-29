@@ -79,6 +79,7 @@ footer {
 
     /*font-size: clamp(64px, calc(1vw + 1rem), 20px);*/
     font-size: 64px;
+    margin-bottom: 30px;
 }
 
 .iceberg {
