@@ -240,7 +240,7 @@ article.about p {
 
 @keyframes float {
     0% {
-        transform: translatey(-40px);
+        transform: translatey(0px);
     }
     50% {
      
