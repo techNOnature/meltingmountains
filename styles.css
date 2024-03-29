@@ -145,7 +145,7 @@ footer {
         position: absolute;
         width: 30vw;
         height: 30vh;
-        top: 320px;
+        top: 280px;
         left: 50%;
         transform: scale(1.0);
         animation: float 14s alternate infinite;
