@@ -147,7 +147,7 @@ footer {
         height: 30vh;
         top: 320px;
         left: 50%;
-        transform: scale(1.2);
+        transform: scale(1.0);
         animation: float 10s alternate infinite;
     }
 
@@ -249,5 +249,6 @@ article.about p {
     100% {
 
         transform: translatey(0px);
+        transform: scale(1.2);
     }
 }
