@@ -79,7 +79,7 @@ footer {
 
     /*font-size: clamp(64px, calc(1vw + 1rem), 20px);*/
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .iceberg {
@@ -182,7 +182,7 @@ footer {
 
 .event-info-box h2 {
     text-transform: uppercase;
-    color: #000000;
+    color: ##00008b;
 }
 
 .event-date {
@@ -232,6 +232,7 @@ article.about h2 {
 article.about h3 {
     color: #ffffff;
     text-transform: uppercase;
+    font-weight: 200;
 }
 
 article.about p {
